@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Aviso Legal | Integridade Digital';
+const description = 'Aviso legal e disclaimer da Integridade Digital. Informações importantes sobre nossos serviços e resultados.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen">
+    <section class="pt-24 lg:pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Aviso <span class="text-blue-600">Legal</span></h1>
+          <p class="text-gray-600 mb-4">Última atualização: Janeiro de 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto prose prose-lg">
+          <h2>Disclaimer</h2>
+          <p>A Integridade Digital oferece serviços de consultoria, ferramentas e treinamentos em automação, inteligência artificial e marketing digital. Os resultados apresentados em depoimentos, estudos de caso e materiais promocionais são baseados em experiências individuais e não garantem resultados idênticos para todos os clientes.</p>
+
+          <h2>Resultados Não São Garantidos</h2>
+          <p>Todo negócio envolve riscos. Resultados financeiros e de desempenho dependem de diversos fatores, incluindo esforço individual, condições de mercado, concorrência e execução. As informações fornecidas em nosso site e materiais têm caráter educacional e informativo.</p>
+
+          <h2>Isenção de Responsabilidade</h2>
+          <p>A Integridade Digital não se responsabiliza por:</p>
+          <ul>
+            <li>Decisões de negócio tomadas com base em nosso conteúdo</li>
+            <li>Resultados financeiros ou de desempenho não alcançados</li>
+            <li>Perdas ou danos decorrentes do uso de nossos serviços</li>
+            <li>Ações de terceiros ou parceiros indicados</li>
+          </ul>
+
+          <h2>Informações Gerais</h2>
+          <p>As informações contidas neste site são fornecidas apenas para fins informativos e educacionais. Não constituem aconselhamento profissional, jurídico ou financeiro. Consulte profissionais qualificados para orientação específica ao seu negócio.</p>
+
+          <h2>Links Externos</h2>
+          <p>Nosso site pode conter links para sites de terceiros. Não temos controle sobre o conteúdo ou práticas desses sites e não nos responsabilizamos por danos ou perdas decorrentes de seu uso.</p>
+
+          <h2>Propriedade Intelectual</h2>
+          <p>Todo o conteúdo, marcas e materiais são propriedade da Integridade Digital. É proibida a reprodução sem autorização.</p>
+
+          <h2>Contato</h2>
+          <p>Para questões sobre este aviso legal: contato@integridadedm.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

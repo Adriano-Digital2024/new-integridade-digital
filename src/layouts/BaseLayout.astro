@@ -27,7 +27,8 @@ const seo = Astro.props;
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="author" content={site.author} />
+		<link rel="icon" type="image/png" href="/lovable-uploads/fa84e2b7-37aa-48d5-9d8c-15207c06951c.png" />
 		<link rel="icon" href="/favicon.ico" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<link
@@ -39,9 +40,16 @@ const seo = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-81J47ZMNLV"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-81J47ZMNLV');
+		</script>
 		<Seo {...seo} />
 	</head>
 	<body>

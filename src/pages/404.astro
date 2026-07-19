@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const title = 'Página não encontrada | Integridade Digital';
+const description = 'A página que você procura não foi encontrada.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen">
+    <section class="pt-24 lg:pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-4xl mx-auto">
+          <h1 class="text-8xl lg:text-9xl font-bold text-blue-600 mb-4">404</h1>
+          <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">Página não <span class="text-blue-600">encontrada</span></h2>
+          <p class="text-xl text-gray-600 leading-relaxed mb-8">
+            Desculpe, a página que você está procurando não existe ou foi movida.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="/" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-4 rounded-full text-lg transition-colors">
+              Voltar ao Início
+            </a>
+            <a href="/contato" class="inline-flex items-center bg-gray-200 hover:bg-gray-300 text-gray-900 font-bold px-8 py-4 rounded-full text-lg transition-colors">
+              Fale Conosco
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,54 +1,54 @@
 ---
-import Logo from './Logo.astro';
-
 const columns = [
 	{
-		heading: 'Product',
+		heading: 'Navegação',
 		links: [
-			{ href: '/#features', label: 'Features' },
-			{ href: '/#showcase', label: 'Showcase' },
-			{ href: '/work', label: 'Work' },
-			{ href: '/#pricing', label: 'Pricing' },
-		],
-	},
-	{
-		heading: 'Resources',
-		links: [
-			{ href: '/search', label: 'Search' },
-			{ href: '/#faq', label: 'FAQ' },
+			{ href: '/', label: 'Home' },
 			{ href: '/blog', label: 'Blog' },
-			{ href: '/rss.xml', label: 'RSS' },
+			{ href: '/vendas', label: 'Vendas' },
+			{ href: '/recursos', label: 'Recursos' },
+			{ href: '/contato', label: 'Contato' },
 		],
 	},
 	{
-		heading: 'Company',
+		heading: 'Produtos',
 		links: [
-			{ href: '#', label: 'About' },
-			{ href: '#', label: 'License' },
-			{ href: '#', label: 'Twitter' },
-			{ href: '#', label: 'GitHub' },
+			{ href: '/manual-definitivo', label: 'Manual Definitivo' },
+			{ href: '/campanhas-inteligentes', label: 'Campanhas Inteligentes' },
+			{ href: '/mentoria-privada', label: 'Mentoria Privada' },
+			{ href: '/multiplicador-de-talentos', label: 'Multiplicador de Talentos' },
+		],
+	},
+	{
+		heading: 'Links',
+		links: [
+			{ href: '/politica-privacidade', label: 'Política de Privacidade' },
+			{ href: '/termos-uso', label: 'Termos de Uso' },
+			{ href: '/politica-cookies', label: 'Política de Cookies' },
+			{ href: '/aviso-legal', label: 'Aviso Legal' },
+			{ href: '/rss.xml', label: 'RSS' },
 		],
 	},
 ];
 ---
 
-<footer class="bg-ink text-sky-mist">
+<footer class="bg-gray-900 text-gray-300">
 	<div
 		class="mx-auto grid max-w-[1200px] gap-8 px-8 pt-[60px] pb-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]"
 	>
 		<div>
-			<Logo size="sm" />
-			<p class="mt-4 max-w-[260px] text-sm leading-relaxed text-slate-400">
-				The versatile Astro starter for blogs, portfolios, and landing pages.
+			<a href="/" class="text-xl font-bold text-white">Integridade Digital</a>
+			<p class="mt-4 max-w-[260px] text-sm leading-relaxed text-gray-400">
+				Automação inteligente, chatbots avançados e funis de conversão para infoprodutores e experts. Marketing digital que gera resultados reais.
 			</p>
 		</div>
 		{
 			columns.map((col) => (
 				<div>
-					<div class="mb-3.5 text-sm font-bold text-cloud">{col.heading}</div>
+					<div class="mb-3.5 text-sm font-bold text-white">{col.heading}</div>
 					<div class="flex flex-col gap-2.5 text-sm">
 						{col.links.map((link) => (
-							<a href={link.href} class="text-sky-mist hover:text-orange">
+							<a href={link.href} class="text-gray-400 hover:text-blue-400">
 								{link.label}
 							</a>
 						))}
@@ -59,10 +59,10 @@ const columns = [
 	</div>
 	<div class="border-t border-white/10">
 		<div
-			class="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-3 px-8 py-5 text-[13px] text-slate-500"
+			class="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-3 px-8 py-5 text-[13px] text-gray-500"
 		>
-			<span>© 2026 Kepler. All rights reserved.</span>
-			<span>Made with Astro ✦</span>
+			<span>&copy; 2026 Integridade Digital Marketing. Todos os direitos reservados.</span>
+			<span>CNPJ: 39.810.368/0001-80</span>
 		</div>
 	</div>
 </footer>

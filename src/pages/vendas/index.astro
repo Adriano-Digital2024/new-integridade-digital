@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const title = 'Módulos de Vendas com IA | Integridade Digital';
+const description = 'Central de ferramentas para atrair, qualificar e converter leads.';
+---
+
+<BaseLayout title={title} description={description}>
+  <main class="min-h-screen">
+    <section class="mx-auto max-w-6xl px-6 py-20">
+      <h1 class="text-4xl font-bold text-navy">Módulos de Vendas com IA</h1>
+      <p class="mt-4 text-lg text-gray-600">Central de ferramentas para atrair, qualificar e converter leads.</p>
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <a href="/vendas/assistente-copy" class="rounded-2xl border-2 border-navy/10 bg-white p-6 shadow-pop transition hover:-translate-y-1 hover:shadow-pop-lg">
+          <h2 class="text-xl font-bold text-navy">Assistente de Copy</h2>
+          <p class="mt-2 text-gray-600">Gere textos de alto impacto para anúncios, e-mails e páginas de venda.</p>
+        </a>
+        <a href="/vendas/chat-qualificacao" class="rounded-2xl border-2 border-navy/10 bg-white p-6 shadow-pop transition hover:-translate-y-1 hover:shadow-pop-lg">
+          <h2 class="text-xl font-bold text-navy">Chat de Qualificação</h2>
+          <p class="mt-2 text-gray-600">Automatize a triagem e qualificação de leads 24/7.</p>
+        </a>
+        <a href="/vendas/whatsapp" class="rounded-2xl border-2 border-navy/10 bg-white p-6 shadow-pop transition hover:-translate-y-1 hover:shadow-pop-lg">
+          <h2 class="text-xl font-bold text-navy">WhatsApp</h2>
+          <p class="mt-2 text-gray-600">Dispare mensagens personalizadas e gerencie conversas no WhatsApp.</p>
+        </a>
+        <a href="/vendas/automacoes" class="rounded-2xl border-2 border-navy/10 bg-white p-6 shadow-pop transition hover:-translate-y-1 hover:shadow-pop-lg">
+          <h2 class="text-xl font-bold text-navy">Automações</h2>
+          <p class="mt-2 text-gray-600">Crie fluxos automatizados de follow-up e nutrição.</p>
+        </a>
+        <a href="/vendas/leads" class="rounded-2xl border-2 border-navy/10 bg-white p-6 shadow-pop transition hover:-translate-y-1 hover:shadow-pop-lg">
+          <h2 class="text-xl font-bold text-navy">Leads</h2>
+          <p class="mt-2 text-gray-600">Gerencie sua base de contatos com escores de prioridade.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
