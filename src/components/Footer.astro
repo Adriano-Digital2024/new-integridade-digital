@@ -32,23 +32,23 @@ const columns = [
 ];
 ---
 
-<footer class="bg-gray-900 text-gray-300">
+<footer class="bg-navy-deep text-sky-mist">
 	<div
 		class="mx-auto grid max-w-[1200px] gap-8 px-8 pt-[60px] pb-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]"
 	>
 		<div>
-			<a href="/" class="text-xl font-bold text-white">Integridade Digital</a>
-			<p class="mt-4 max-w-[260px] text-sm leading-relaxed text-gray-400">
+			<a href="/" class="text-xl font-bold text-cloud">Integridade Digital</a>
+			<p class="mt-4 max-w-[260px] text-sm leading-relaxed text-sky-mist">
 				Automação inteligente, chatbots avançados e funis de conversão para infoprodutores e experts. Marketing digital que gera resultados reais.
 			</p>
 		</div>
 		{
 			columns.map((col) => (
 				<div>
-					<div class="mb-3.5 text-sm font-bold text-white">{col.heading}</div>
+					<div class="mb-3.5 text-sm font-bold text-cloud">{col.heading}</div>
 					<div class="flex flex-col gap-2.5 text-sm">
 						{col.links.map((link) => (
-							<a href={link.href} class="text-gray-400 hover:text-blue-400">
+							<a href={link.href} class="text-sky-mist hover:text-orange-bright">
 								{link.label}
 							</a>
 						))}
@@ -57,9 +57,9 @@ const columns = [
 			))
 		}
 	</div>
-	<div class="border-t border-white/10">
+	<div class="border-t border-cloud/10">
 		<div
-			class="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-3 px-8 py-5 text-[13px] text-gray-500"
+			class="mx-auto flex max-w-[1200px] flex-wrap justify-between gap-3 px-8 py-5 text-[13px] text-cloud/55"
 		>
 			<span>&copy; 2026 Integridade Digital Marketing. Todos os direitos reservados.</span>
 			<span>CNPJ: 39.810.368/0001-80</span>
